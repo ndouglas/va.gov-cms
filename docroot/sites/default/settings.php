@@ -131,6 +131,7 @@ $config['environment_indicator.indicator']['name'] = 'Local';
 $settings['config_sync_directory'] = '../config/sync';
 
 $env_type = getenv('CMS_ENVIRONMENT_TYPE') ?: 'ci';
+$settings['file_public_base_url'] = '/sites/default/files';
 
 $config['govdelivery_bulletins.settings']['govdelivery_endpoint'] = getenv('CMS_GOVDELIVERY_ENDPOINT') ?: FALSE;
 $config['govdelivery_bulletins.settings']['govdelivery_username'] = getenv('CMS_GOVDELIVERY_USERNAME') ?: FALSE;
