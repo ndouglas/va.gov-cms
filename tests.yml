@@ -34,7 +34,11 @@ va/tests/phplint:
 
 va/tests/phpunit:
   description: PHPUnit
-  command: phpunit --exclude-group disabled tests/phpunit --colors=always
+  command: phpunit --exclude-group disabled --exclude-group blackfire tests/phpunit --colors=always
+
+va/tests/blackfire:
+  description: PHPUnit
+  command: phpunit --exclude-group disabled --group blackfire tests/phpunit --colors=always
 
 va/tests/accessibility:
   description: accessibility test with axe-webdriverjs for 508 compliance
