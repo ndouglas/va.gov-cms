@@ -13,6 +13,7 @@
     },
     "require": {
         "alchemy/zippy": "^0.4.9",
+        "blackfire/php-sdk": "^1.23",
         "bower-asset/blazy": "^1.8",
         "bower-asset/cropper": "^4.1",
         "bower-asset/dropzone": "^5.5",
@@ -396,6 +397,7 @@
         "va:test:cs": [
             "phpcs --ignore=*.md,*.min.css,styles.css,wysiwyg.css,proofing.css,user_guides.css,*/node_modules/*,*/simplesaml*/* --extensions=php,module,inc,install,profile,engine,theme,js,css --standard=./docroot/vendor/drupal/coder/coder_sniffer/Drupal/ruleset.xml docroot/modules/custom docroot/modules/contrib/workflow_assignments docroot/themes/custom --colors"
         ],
+        "va:test:blackfire": "phpunit tests/phpunit --colors=always --exclude-group=disabled --group=blackfire",
         "va:test:unit": "phpunit tests/phpunit --colors=always --exclude-group=disabled",
         "va:cbf": "phpcbf --ignore=*.md,*.min.css,uswds.css,*/node_modules/*,*/simplesaml*/* --standard=./docroot/vendor/drupal/coder/coder_sniffer/Drupal/ruleset.xml docroot/modules/custom docroot/themes/custom --colors",
         "va:web:install": [
