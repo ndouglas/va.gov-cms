@@ -36,8 +36,9 @@
         "drupal/config_split": "^1.4",
         "drupal/consumers": "1.11.0",
         "drupal/content_lock": "^2.0@alpha",
-        "drupal/core-composer-scaffold": "^8.8",
-        "drupal/core-recommended": "8.9.14",
+        "drupal/core-composer-scaffold": "^9.0.0",
+        "drupal/core-project-message": "^9.0.0",
+        "drupal/core-recommended": "^9.0.0",
         "drupal/crop": "^2.0",
         "drupal/csv_serialization": "^2.0",
         "drupal/ctools_block": "^3.2",
@@ -60,7 +61,7 @@
         "drupal/entityqueue": "^1.0@beta",
         "drupal/environment_indicator": "^4.0",
         "drupal/fast_404": "2.x-dev#5382a99335ee466f8261dc1774a3d56f1699da81",
-        "drupal/feature_toggle": "1.x-dev#8753ecb9a6a541fdea2de04a4640aa6b998a8df4",
+        "drupal/feature_toggle": "1.x-dev",
         "drupal/field_group": "^3.1",
         "drupal/fieldhelptext": "^1.0@beta",
         "drupal/flag": "^4.0@beta",
@@ -68,8 +69,8 @@
         "drupal/govdelivery_bulletins": "^1.2",
         "drupal/graphql": "^3.0",
         "drupal/graphql_metatag": "1.x-dev",
-        "drupal/health_check_url": "2.x-dev#6eff12c076f6e0412b33e11201e33b1257431f4e",
-        "drupal/hms_field": "1.x-dev#f138860c7b18c6aab00f5860b29d15b9ab2197f5",
+        "drupal/health_check_url": "2.x-dev",
+        "drupal/hms_field": "1.x-dev",
         "drupal/hook_event_dispatcher": "^2.05",
         "drupal/ief_table_view_mode": "^2.1",
         "drupal/image_style_warmer": "^1.0",
@@ -147,9 +148,10 @@
         "querypath/querypath": "^3.0",
         "simplesamlphp/simplesamlphp": "^1.18",
         "squizlabs/php_codesniffer": "^3.5",
-        "symfony/config": "^3.4",
+        "symfony/config": "^4.0",
         "symfony/finder": "^3",
         "symfony/phpunit-bridge": "^5.1",
+        "symfony/routing": "^4.0",
         "traviscarden/behat-table-comparison": "~0.2",
         "va-gov/web": "^0.1",
         "vlucas/phpdotenv": "^5.3",
@@ -171,6 +173,58 @@
         ]
     },
     "repositories": {
+        "drupal/feature_toggle": {
+            "type": "package",
+            "package": {
+                "name": "drupal/feature_toggle",
+                "type": "drupal-module",
+                "version": "1.x-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://git.drupalcode.org/project/feature_toggle.git",
+                    "reference": "8753ecb9a6a541fdea2de04a4640aa6b998a8df4"
+                }
+            }
+        },
+        "drupal/health_check_url": {
+            "type": "package",
+            "package": {
+                "name": "drupal/health_check_url",
+                "type": "drupal-module",
+                "version": "2.x-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://git.drupalcode.org/project/health_check_url.git",
+                    "reference": "6eff12c076f6e0412b33e11201e33b1257431f4e"
+                }
+            }
+        },
+        "drupal/hms_field": {
+            "type": "package",
+            "package": {
+                "name": "drupal/hms_field",
+                "type": "drupal-module",
+                "version": "1.x-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://git.drupalcode.org/project/hms_field.git",
+                    "reference": "f138860c7b18c6aab00f5860b29d15b9ab2197f5"
+                }
+            }
+        },
+        "drupal/textfield_counter": {
+            "type": "package",
+            "package": {
+                "name": "drupal/textfield_counter",
+                "type": "drupal-module",
+                "version": "2.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://git.drupalcode.org/project/textfield_counter.git",
+                    "reference": "64e5dca6654520d2cfbf7e03af84ed19202637a2"
+                }
+            }
+        },
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
